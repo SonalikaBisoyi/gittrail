@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Filter And Search</title>
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="product.css" />
+</head>
+<body>
+  <div id="buttons">
+    <a href="index.html" class="button-value">Home</a>
+    <button class="button-value" onclick="filterProduct('all')">All</button>
+    <button class="button-value" onclick="filterProduct('Fiction')">Fiction</button>
+    <button class="button-value" onclick="filterProduct('Classics')">Classics</button>
+    <button class="button-value" onclick="filterProduct('Fantasy')">Fantasy</button>
+    <button class="button-value" onclick="filterProduct('Comedy')">Comedy</button>
+    <button class="button-value" onclick="filterProduct('SelfHelp')">Self Help</button>
+    <button class="button-value" onclick="filterProduct('Action and adventure')">Action and Adventure</button>
+    <button class="button-value" onclick="filterProduct('Graphic Novel')">Graphic Novel</button>
+    <button class="button-value" onclick="filterProduct('Detective and Mystery')">Detective and Mystery</button>
+    <button class="button-value" onclick="filterProduct('Romance')">Romance</button>
+    <button class="button-value" onclick="filterProduct('Biographies and Autobiographies')">Biographies and Autobiographies</button>
+    <button class="button-value" onclick="filterProduct('Cookbooks')">Cookbooks</button>
+  </div>
+  <!-- Add a container for the book details popup -->
+  <div id="bookDetailsPopup" class="popup">
+    <div id="popupContent">
+      <span id="closePopup" >×</span>
+      <div id="bookDetails"></div>
+    </div>
+  </div>
+  
+  
+  <div id="books"></div>
+
+
+  <script src="product.js"></script>
+  
+</body>
+</html>
